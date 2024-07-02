@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./bundles/main.min.css"/>
+    <link rel="stylesheet" href="./bundles/main.min.css?_v=20240702115523"/>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
@@ -10,14 +10,14 @@
     <!-- Font Montserrat-->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap&_v=20240702115523" rel="stylesheet"/>
     <!-- Font Open Sans-->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap&_v=20240702115523" rel="stylesheet"/>
   </head>
   <body>
-    <main class="main index">
+    <main class="main other">
       <div class="ui-kit"> 
         <div class="ui-kit__header">
           <h2 class="h2">Other elements</h2>
@@ -118,6 +118,15 @@
           <div class="subtitle">Secondary/Outline</div>
           <div class="ui-kit__wrap">
             <div class="button button_big button_secondary-1">
+              <svg class="icon">
+                <use xlink:href="./svgicons/icons.svg#Name=Chevron-left"></use>
+              </svg>
+              <div class="btn btn_dark btn_big">Button</div>
+              <svg class="icon">
+                <use xlink:href="./svgicons/icons.svg#Name=Chevron-right"></use>
+              </svg>
+            </div>
+            <div class="button button_big button_secondary-1 button_secondary-1-active">
               <svg class="icon">
                 <use xlink:href="./svgicons/icons.svg#Name=Chevron-left"></use>
               </svg>
@@ -253,6 +262,16 @@
                   <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
                 </svg>
               </div>
+              <div class="icon-btn icon-btn_type-three">
+                <svg class="icon">
+                  <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                </svg>
+              </div>
+              <div class="icon-btn icon-btn_type-three icon-btn_selected">
+                <svg class="icon">
+                  <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -330,10 +349,5 @@
     </main>
   </body>
 </html>
-<!-- script(src="./vendor/vue/vue.min.js")-->
-<!-- link(rel="stylesheet" href="./vendor/fontawesome-6/pro/css/all.min.css")-->
-<!-- script(src="./vendor/fontawesome-6/pro/js/all.min.js")-->
-<!-- Vue.js CDN-->
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <!-- All custom scripts-->
-<script src="./bundles/app.min.js"></script>
+<script src="./bundles/app.min.js?_v=20240702115523"></script>
