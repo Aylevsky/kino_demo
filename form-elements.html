@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./bundles/main.min.css"/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png"/>
+    <title>Form elements</title>
+    <!-- Font Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+    <!-- Font Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <main class="main index">
+      <div class="ui-kit"> 
+        <div class="ui-kit__header">
+          <h2 class="h2">Form elements</h2>
+        </div>
+        <div class="ui-kit__row"> 
+          <h3 class="h3">Search & LogIn</h3>
+        </div>
+        <div class="ui-kit__container"> 
+          <div class="subtitle">Default</div>
+          <div class="ui-kit__wrap">
+            <div class="search search_default">
+              <p class="paragraph">Title </p>
+              <div class="search__wrap">
+                <div class="search__icon-one">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Search"></use>
+                  </svg>
+                </div>
+                <input type="text" placeholder="Я шукаю">
+                <div class="search__icon-two search__icon-two_hidden">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=X"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="paragraph_small">Text</p>
+            </div>
+          </div>
+        </div>
+        <div class="ui-kit__container"> 
+          <div class="subtitle">Disabled</div>
+          <div class="ui-kit__wrap">
+            <div class="search search_disabled">
+              <p class="paragraph">Title </p>
+              <div class="search__wrap">
+                <svg class="icon">
+                  <use xlink:href="./svgicons/icons.svg#Name=Search"></use>
+                </svg>
+                <input type="text" placeholder="Я шукаю" disabled>
+                <div class="search__icon-two search__icon-two_hidden">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=X"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="paragraph_small">Text</p>
+            </div>
+          </div>
+        </div>
+        <div class="ui-kit__row"> 
+          <h3 class="h3">Text Field</h3>
+        </div>
+        <div class="ui-kit__container"> 
+          <div class="subtitle">Default</div>
+          <div class="ui-kit__wrap">
+            <textarea class="textarea textarea_default" name="" placeholder="Залиште відгук тут"></textarea>
+          </div>
+        </div>
+        <div class="ui-kit__container"> 
+          <div class="subtitle">Disabled</div>
+          <div class="ui-kit__wrap">
+            <textarea class="textarea textarea_disabled" name="" placeholder="Залиште відгук тут" disabled></textarea>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<!-- All custom scripts-->
+<script src="./bundles/app.min.js"></script>
