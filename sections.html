@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <link rel="stylesheet" href="./bundles/main.min.css"/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png"/>
+    <title>Repeated sections</title>
+    <!-- Font Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+    <!-- Font Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css"/>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container header__wrapper"> <a class="header__logo" href="index.html"> <picture><source srcset="./images/logo.webp" type="image/webp"><img src="./images/logo.png" alt="Logo" loading="lazy"/></picture></a><a class="link link_big link_black view_desktop-tablet" href="#">
+          <svg class="icon">
+            <use xlink:href="./svgicons/icons.svg#Name=Map-pin"></use>
+          </svg>Місто</a>
+        <div class="button button_big button_primary-2 view_desktop header__cacegories-btn show-categories-btn">
+          <svg class="icon">
+            <use xlink:href="./svgicons/icons.svg#Name=Category"></use>
+          </svg>
+          <div class="btn btn_dark btn_big">Категорії</div>
+        </div>
+        <div class="search search_default header__search view_desktop">
+          <div class="search__wrap">
+            <div class="search__icon-one">
+              <svg class="icon">
+                <use xlink:href="./svgicons/icons.svg#Name=Search"></use>
+              </svg>
+            </div>
+            <input type="text" placeholder="Я шукаю"/>
+            <div class="search__icon-two search__icon-two_hidden">
+              <svg class="icon">
+                <use xlink:href="./svgicons/icons.svg#Name=X"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="header__langs view_desktop"> <a class="header__lang header__lang_selected" href="#">
+            <svg class="icon">
+              <use xlink:href="./svgicons/colored.svg#Name=UKR"></use>
+            </svg>UA </a>
+          <div class="header__langs-line"> </div><a class="header__lang" href="#">RU</a>
+        </div>
+        <div class="header__left-group view_desktop">
+          <div class="icon-btn icon-btn_type-two show-categories-btn">
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+            </svg>
+          </div>
+          <div class="button button_big button_secondary-1">
+            <div class="btn btn_dark btn_big">Увійти</div>
+          </div>
+          <div class="button button_big button_primary-1">
+            <div class="btn btn_light btn_big">Зареєструватись</div>
+          </div>
+        </div>
+        <div class="header__left-group view_tablet-mobile">
+          <div class="button button_big button_primary-2 view_tablet show-categories-btn">
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Category"></use>
+            </svg>
+            <div class="btn btn_dark btn_big">Категорії</div>
+          </div>
+          <div class="header__langs view_tablet"><a class="header__lang header__lang_selected" href="#">
+              <svg class="icon">
+                <use xlink:href="./svgicons/colored.svg#Name=UKR"></use>
+              </svg>UA </a>
+            <div class="header__langs-line"> </div><a class="header__lang" href="#">RU</a>
+          </div>
+          <div class="button button_big button_road button_primary-2 view_mobile show-categories-btn">
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Category"></use>
+            </svg>
+          </div>
+          <div class="icon-btn icon-btn_type-two view_mobile-tablet" date-show-m-navigation="date-show-m-navigation">
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Search"></use>
+            </svg>
+          </div>
+          <div class="icon-btn icon-btn_type-two view_tablet">
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+            </svg>
+          </div>
+          <div class="icon-btn icon-btn_type-two view_tablet">
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=User"></use>
+            </svg>
+          </div>
+          <div class="icon-btn icon-btn_type-two view_mobile">
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Menu-2"> </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile search window-->
+    <div class="mobile-search">
+      <div class="mobile-search__wrap">
+        <div class="search search_default">
+          <div class="search__wrap">
+            <div class="search__icon-one" date-show-m-navigation="date-show-m-navigation">
+              <svg class="icon">
+                <use xlink:href="./svgicons/icons.svg#Name=Search"></use>
+              </svg>
+            </div>
+            <input type="text" placeholder="Я шукаю"/>
+            <div class="search__icon-two search__icon-two_hidden">
+              <svg class="icon">
+                <use xlink:href="./svgicons/icons.svg#Name=X"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="categories">
+      <svg class="icon categories__icon" id="categories__icon">
+        <use xlink:href="./svgicons/icons.svg#Name=X"></use>
+      </svg>
+      <div class="categories__wrapper"> 
+        <div class="menu-list"> 
+          <div class="menu-list__title"> 
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Movie"></use>
+            </svg>Title
+          </div>
+          <div class="menu-list__list"><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_blue" href="#">Дивитися всі</a>
+          </div>
+        </div>
+        <div class="menu-list"> 
+          <div class="menu-list__title"> 
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Movie"></use>
+            </svg>Title
+          </div>
+          <div class="menu-list__list"><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_blue" href="#">Дивитися всі</a>
+          </div>
+        </div>
+        <div class="menu-list"> 
+          <div class="menu-list__title"> 
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Movie"></use>
+            </svg>Title
+          </div>
+          <div class="menu-list__list"><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_blue" href="#">Дивитися всі</a>
+          </div>
+        </div>
+        <div class="menu-list"> 
+          <div class="menu-list__title"> 
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Movie"></use>
+            </svg>Title
+          </div>
+          <div class="menu-list__list"><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_blue" href="#">Дивитися всі</a>
+          </div>
+        </div>
+        <div class="menu-list"> 
+          <div class="menu-list__title"> 
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Movie"></use>
+            </svg>Title
+          </div>
+          <div class="menu-list__list"><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_blue" href="#">Дивитися всі</a>
+          </div>
+        </div>
+        <div class="menu-list"> 
+          <div class="menu-list__title"> 
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Movie"></use>
+            </svg>Title
+          </div>
+          <div class="menu-list__list"><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_blue" href="#">Дивитися всі</a>
+          </div>
+        </div>
+        <div class="menu-list"> 
+          <div class="menu-list__title"> 
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Movie"></use>
+            </svg>Title
+          </div>
+          <div class="menu-list__list"><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_blue" href="#">Дивитися всі</a>
+          </div>
+        </div>
+        <div class="menu-list"> 
+          <div class="menu-list__title"> 
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Movie"></use>
+            </svg>Title
+          </div>
+          <div class="menu-list__list"><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_black" href="#">Lorem ipsum dolor</a><a class="link link_big link_blue" href="#">Дивитися всі</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main index">
+      <div class="testimonials"> 
+        <div class="container"> 
+          <h1 class="h1">Відгуки</h1>
+        </div>
+        <div class="container testimonials__btns-row"> 
+          <div class="select"> 
+            <div class="select__input-wrap">
+              <input id="select-1" type="text" name="select-1" placeholder="По рейтингу рецензії">
+              <svg class="icon">
+                <use xlink:href="./svgicons/icons.svg#Name=Chevron-up"></use>
+              </svg>
+            </div>
+            <div class="select__list"> 
+              <div class="link link_small link_black">По рейтингу рецензії</div>
+              <div class="link link_small link_black">По датi</div>
+              <div class="link link_small link_black">За кiлькiстю лайкiв</div>
+            </div>
+          </div><a class="button button_small button_secondary-1" href="#">
+            <div class="btn btn_dark btn_small btn_red-icon">
+              <svg class="icon">
+                <use xlink:href="./svgicons/icons.svg#Name=Thumb-up"></use>
+              </svg>201
+            </div></a><a class="button button_small button_secondary-1" href="#">
+            <div class="btn btn_dark btn_small btn_red-icon">
+              <svg class="icon">
+                <use xlink:href="./svgicons/icons.svg#Name=Thumb-down"></use>
+              </svg>13
+            </div></a>
+        </div>
+        <div class="container testimonials__wrapper"> 
+          <div class="testimonial"><picture><source srcset="./images/blocks/testimonial/avatar.webp, " type="image/webp"><img class="testimonial__img" src="./images/blocks/testimonial/avatar.png" alt="" srcset="" loading="lazy"></picture>
+            <div class="testimonial__header testimonial__header_mob">
+              <div class="testimonial__text"> 
+                <div class="btn btn_small">Ім’я Прiзвище</div>
+                <h4 class="h4">34 відгуків, 12 оцінок, рейтинг 390</h4>
+              </div>
+              <div class="tag">8</div>
+            </div>
+            <div class="testimonial__content">
+              <div class="testimonial__header view_desktop-tablet">
+                <div class="tag">8</div>
+                <div class="testimonial__text"> 
+                  <div class="btn btn_small">Ім’я Прiзвище</div>
+                  <h4 class="h4">34 відгуків, 12 оцінок, рейтинг 390</h4>
+                </div>
+                <div class="testimonial__right"> 
+                  <div class="btn btn_small">ЧЧ місяць РР</div>
+                  <svg class="icon testimonial__open-menu">
+                    <use xlink:href="./svgicons/icons.svg#Name=Dots"></use>
+                  </svg>
+                  <div class="context-menu"> <a class="link link_small link_black" href="#">Відповiсти</a><a class="link link_small link_black" href="#">Скарга</a><a class="link link_small link_black" href="#">Приховати</a></div>
+                </div>
+              </div>
+              <p class="paragraph">Цей фільм - справжнє диво кінематографу! Захоплюючий сюжет, який переплітається з вражаючими візуальними ефектами, створює неповторне враження, що залишається на довгий час. Кожна сцена пропонує нові відкриття, а кожен персонаж має свою власну історію, яка глибоко зачіпає. Актори виконують свої ролі з такою віртуозністю, що перетворюють фільм на справжнє театральне виставу. Захоплюючий та майстерно виконаний, цей фільм залишає слід в серці кожного глядача. Неабияка подорож у світ кіноарту, яку варто пережити знову та знову.</p>
+              <div class="testimonial__footer"> <a class="link link_big link_black" href="#">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Thumb-up"></use>
+                  </svg>12</a><a class="link link_big link_black" href="#">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Thumb-down"></use>
+                  </svg>2</a></div>
+            </div>
+          </div>
+          <div class="testimonial"><picture><source srcset="./images/blocks/testimonial/avatar.webp, " type="image/webp"><img class="testimonial__img" src="./images/blocks/testimonial/avatar.png" alt="" srcset="" loading="lazy"></picture>
+            <div class="testimonial__header testimonial__header_mob">
+              <div class="testimonial__text"> 
+                <div class="btn btn_small">Ім’я Прiзвище</div>
+                <h4 class="h4">34 відгуків, 12 оцінок, рейтинг 390</h4>
+              </div>
+              <div class="tag">8</div>
+            </div>
+            <div class="testimonial__content">
+              <div class="testimonial__header view_desktop-tablet">
+                <div class="tag">8</div>
+                <div class="testimonial__text"> 
+                  <div class="btn btn_small">Ім’я Прiзвище</div>
+                  <h4 class="h4">34 відгуків, 12 оцінок, рейтинг 390</h4>
+                </div>
+                <div class="testimonial__right"> 
+                  <div class="btn btn_small">ЧЧ місяць РР</div>
+                  <svg class="icon testimonial__open-menu">
+                    <use xlink:href="./svgicons/icons.svg#Name=Dots"></use>
+                  </svg>
+                  <div class="context-menu"> <a class="link link_small link_black" href="#">Відповiсти</a><a class="link link_small link_black" href="#">Скарга</a><a class="link link_small link_black" href="#">Приховати</a></div>
+                </div>
+              </div>
+              <p class="paragraph">Цей фільм - справжнє диво кінематографу! Захоплюючий сюжет, який переплітається з вражаючими візуальними ефектами, створює неповторне враження, що залишається на довгий час. Кожна сцена пропонує нові відкриття, а кожен персонаж має свою власну історію, яка глибоко зачіпає. Актори виконують свої ролі з такою віртуозністю, що перетворюють фільм на справжнє театральне виставу. Захоплюючий та майстерно виконаний, цей фільм залишає слід в серці кожного глядача. Неабияка подорож у світ кіноарту, яку варто пережити знову та знову.</p>
+              <div class="testimonial__footer"> <a class="link link_big link_black" href="#">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Thumb-up"></use>
+                  </svg>12</a><a class="link link_big link_black" href="#">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Thumb-down"></use>
+                  </svg>2</a></div>
+            </div>
+          </div>
+          <div class="testimonial"><picture><source srcset="./images/blocks/testimonial/avatar.webp, " type="image/webp"><img class="testimonial__img" src="./images/blocks/testimonial/avatar.png" alt="" srcset="" loading="lazy"></picture>
+            <div class="testimonial__header testimonial__header_mob">
+              <div class="testimonial__text"> 
+                <div class="btn btn_small">Ім’я Прiзвище</div>
+                <h4 class="h4">34 відгуків, 12 оцінок, рейтинг 390</h4>
+              </div>
+              <div class="tag">8</div>
+            </div>
+            <div class="testimonial__content">
+              <div class="testimonial__header view_desktop-tablet">
+                <div class="tag">8</div>
+                <div class="testimonial__text"> 
+                  <div class="btn btn_small">Ім’я Прiзвище</div>
+                  <h4 class="h4">34 відгуків, 12 оцінок, рейтинг 390</h4>
+                </div>
+                <div class="testimonial__right"> 
+                  <div class="btn btn_small">ЧЧ місяць РР</div>
+                  <svg class="icon testimonial__open-menu">
+                    <use xlink:href="./svgicons/icons.svg#Name=Dots"></use>
+                  </svg>
+                  <div class="context-menu"> <a class="link link_small link_black" href="#">Відповiсти</a><a class="link link_small link_black" href="#">Скарга</a><a class="link link_small link_black" href="#">Приховати</a></div>
+                </div>
+              </div>
+              <p class="paragraph">Цей фільм - справжнє диво кінематографу! Захоплюючий сюжет, який переплітається з вражаючими візуальними ефектами, створює неповторне враження, що залишається на довгий час. Кожна сцена пропонує нові відкриття, а кожен персонаж має свою власну історію, яка глибоко зачіпає. Актори виконують свої ролі з такою віртуозністю, що перетворюють фільм на справжнє театральне виставу. Захоплюючий та майстерно виконаний, цей фільм залишає слід в серці кожного глядача. Неабияка подорож у світ кіноарту, яку варто пережити знову та знову.</p>
+              <div class="testimonial__footer"> <a class="link link_big link_black" href="#">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Thumb-up"></use>
+                  </svg>12</a><a class="link link_big link_black" href="#">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Thumb-down"></use>
+                  </svg>2</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="container testimonials__button"> <a class="button button_big button_secondary-1" href="#">
+            <div class="btn btn_dark btn_big">
+               Показати ще 5 з 25
+              <svg class="icon">
+                <use xlink:href="./svgicons/icons.svg#Name=Plus"></use>
+              </svg>
+            </div></a></div>
+        <div class="container pagination"><a class="icon-btn icon-btn_type-two" href="#">
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Chevron-left"></use>
+            </svg></a>
+          <div class="link link_small link_black link_hover-border">1</div>
+          <div class="link link_small link_black link_hover-border">2</div>
+          <div class="link link_small link_black link_hover-border">3</div>
+          <div class="link link_small link_black link_hover-border">4</div>
+          <div class="link link_small link_black link_hover-border">5</div>
+          <div class="link link_small link_black link_passive">...</div>
+          <div class="link link_small link_black link_active">7</div><a class="icon-btn icon-btn_type-two" href="#">
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Chevron-right"></use>
+            </svg></a>
+        </div>
+      </div>
+      <div class="collections"> 
+        <div class="container">
+          <h1 class="h1">Добірки</h1>
+        </div>
+        <div class="container collections__wrap"> 
+          <div class="collections__row-1">
+            <div class="film-card" style="background-image: url('./images/blocks/film-card/img.png')">
+              <div class="film-card__wrap">
+                <h2 class="h2">Film Recommended</h2>
+                <div class="icon-btn icon-btn_small icon-btn_type-one">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="film-card" style="background-image: url('./images/blocks/film-card/img.png')">
+              <div class="film-card__wrap">
+                <h2 class="h2">Film Recommended</h2>
+                <div class="icon-btn icon-btn_small icon-btn_type-one">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="film-card" style="background-image: url('./images/blocks/film-card/img.png')">
+              <div class="film-card__wrap">
+                <h2 class="h2">Film Recommended</h2>
+                <div class="icon-btn icon-btn_small icon-btn_type-one">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collections__row-2">
+            <div class="film-card" style="background-image: url('./images/blocks/film-card/img.png')">
+              <div class="film-card__wrap">
+                <h2 class="h2">Film Recommended</h2>
+                <div class="icon-btn icon-btn_small icon-btn_type-one">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="film-card" style="background-image: url('./images/blocks/film-card/img.png')">
+              <div class="film-card__wrap">
+                <h2 class="h2">Film Recommended</h2>
+                <div class="icon-btn icon-btn_small icon-btn_type-one">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="film-card" style="background-image: url('./images/blocks/film-card/img.png')">
+              <div class="film-card__wrap">
+                <h2 class="h2">Film Recommended</h2>
+                <div class="icon-btn icon-btn_small icon-btn_type-one">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="film-card" style="background-image: url('./images/blocks/film-card/img.png')">
+              <div class="film-card__wrap">
+                <h2 class="h2">Film Recommended</h2>
+                <div class="icon-btn icon-btn_small icon-btn_type-one">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="film-card" style="background-image: url('./images/blocks/film-card/img.png')">
+              <div class="film-card__wrap">
+                <h2 class="h2">Film Recommended</h2>
+                <div class="icon-btn icon-btn_small icon-btn_type-one">
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container collections__button-wrap"><a class="button button_big button_secondary-1" href="#">
+            <div class="btn btn_dark btn_big">Дивитись всі</div>
+            <svg class="icon">
+              <use xlink:href="./svgicons/icons.svg#Name=Chevron-right"></use>
+            </svg></a></div>
+      </div>
+      <div class="actions"> 
+        <div class="container">
+          <h1 class="h1">Анонси</h1>
+        </div>
+        <div class="container actions__wrap"> <a class="actions__item" href="#"> 
+            <div class="actions__img-wrap"><picture><source srcset="./images/blocks/actions/img.webp, " type="image/webp"><img src="./images/blocks/actions/img.png" alt="" srcset=""></picture></div>
+            <div class="actions__content"> 
+              <h3 class="h3">Кінопокази під відкритим небом</h3>
+              <h3 class="h3">В амфітеатрі інноваційного парку Unit.City</h3>
+              <p class="actions__date">З ЧЧ по ЧЧ місяць</p>
+            </div></a><a class="actions__item" href="#"> 
+            <div class="actions__img-wrap"><picture><source srcset="./images/blocks/actions/img.webp, " type="image/webp"><img src="./images/blocks/actions/img.png" alt="" srcset=""></picture></div>
+            <div class="actions__content"> 
+              <h3 class="h3">Кінопокази під відкритим небом</h3>
+              <h3 class="h3">В амфітеатрі інноваційного парку Unit.City</h3>
+              <p class="actions__date">З ЧЧ по ЧЧ місяць</p>
+            </div></a><a class="actions__item" href="#"> 
+            <div class="actions__img-wrap"><picture><source srcset="./images/blocks/actions/img.webp, " type="image/webp"><img src="./images/blocks/actions/img.png" alt="" srcset=""></picture></div>
+            <div class="actions__content"> 
+              <h3 class="h3">Кінопокази під відкритим небом</h3>
+              <h3 class="h3">В амфітеатрі інноваційного парку Unit.City</h3>
+              <p class="actions__date">З ЧЧ по ЧЧ місяць</p>
+            </div></a><a class="actions__item" href="#"> 
+            <div class="actions__img-wrap"><picture><source srcset="./images/blocks/actions/img.webp, " type="image/webp"><img src="./images/blocks/actions/img.png" alt="" srcset=""></picture></div>
+            <div class="actions__content"> 
+              <h3 class="h3">Кінопокази під відкритим небом</h3>
+              <h3 class="h3">В амфітеатрі інноваційного парку Unit.City</h3>
+              <p class="actions__date">З ЧЧ по ЧЧ місяць</p>
+            </div></a><a class="actions__item" href="#"> 
+            <div class="actions__img-wrap"><picture><source srcset="./images/blocks/actions/img.webp, " type="image/webp"><img src="./images/blocks/actions/img.png" alt="" srcset=""></picture></div>
+            <div class="actions__content"> 
+              <h3 class="h3">Кінопокази під відкритим небом</h3>
+              <h3 class="h3">В амфітеатрі інноваційного парку Unit.City</h3>
+              <p class="actions__date">З ЧЧ по ЧЧ місяць</p>
+            </div></a><a class="actions__item" href="#"> 
+            <div class="actions__img-wrap"><picture><source srcset="./images/blocks/actions/img.webp, " type="image/webp"><img src="./images/blocks/actions/img.png" alt="" srcset=""></picture></div>
+            <div class="actions__content"> 
+              <h3 class="h3">Кінопокази під відкритим небом</h3>
+              <h3 class="h3">В амфітеатрі інноваційного парку Unit.City</h3>
+              <p class="actions__date">З ЧЧ по ЧЧ місяць</p>
+            </div></a>
+        </div>
+      </div>
+      <div class="city-cinema">
+        <div class="container">
+          <div class="city-cinema__wrapper">
+            <h1 class="h1">Кінотеатри Києва</h1>
+            <div class="city-cinema__cards-wrap">
+              <div class="cinema-card-2"> <picture><source srcset="./images/blocks/cinema-card-2/logo.webp, " type="image/webp"><img src="./images/blocks/cinema-card-2/logo.png" alt="" srcset="" loading="lazy"></picture>
+                <h4 class="h4">Мультиплекс у Lavina IMAX Лазер</h4>
+              </div>
+              <div class="cinema-card-2"> <picture><source srcset="./images/blocks/cinema-card-2/logo.webp, " type="image/webp"><img src="./images/blocks/cinema-card-2/logo.png" alt="" srcset="" loading="lazy"></picture>
+                <h4 class="h4">Мультиплекс у Lavina IMAX Лазер</h4>
+              </div>
+              <div class="cinema-card-2"> <picture><source srcset="./images/blocks/cinema-card-2/logo.webp, " type="image/webp"><img src="./images/blocks/cinema-card-2/logo.png" alt="" srcset="" loading="lazy"></picture>
+                <h4 class="h4">Мультиплекс у Lavina IMAX Лазер</h4>
+              </div>
+              <div class="cinema-card-2"> <picture><source srcset="./images/blocks/cinema-card-2/logo.webp, " type="image/webp"><img src="./images/blocks/cinema-card-2/logo.png" alt="" srcset="" loading="lazy"></picture>
+                <h4 class="h4">Мультиплекс у Lavina IMAX Лазер</h4>
+              </div>
+              <div class="cinema-card-2"> <picture><source srcset="./images/blocks/cinema-card-2/logo.webp, " type="image/webp"><img src="./images/blocks/cinema-card-2/logo.png" alt="" srcset="" loading="lazy"></picture>
+                <h4 class="h4">Мультиплекс у Lavina IMAX Лазер</h4>
+              </div>
+              <div class="cinema-card-2"> <picture><source srcset="./images/blocks/cinema-card-2/logo.webp, " type="image/webp"><img src="./images/blocks/cinema-card-2/logo.png" alt="" srcset="" loading="lazy"></picture>
+                <h4 class="h4">Мультиплекс у Lavina IMAX Лазер</h4>
+              </div>
+              <div class="cinema-card-2"> <picture><source srcset="./images/blocks/cinema-card-2/logo.webp, " type="image/webp"><img src="./images/blocks/cinema-card-2/logo.png" alt="" srcset="" loading="lazy"></picture>
+                <h4 class="h4">Мультиплекс у Lavina IMAX Лазер</h4>
+              </div>
+              <div class="cinema-card-2"> <picture><source srcset="./images/blocks/cinema-card-2/logo.webp, " type="image/webp"><img src="./images/blocks/cinema-card-2/logo.png" alt="" srcset="" loading="lazy"></picture>
+                <h4 class="h4">Мультиплекс у Lavina IMAX Лазер</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Этот блок искользуется в связке с блоком films-->
+      <!-- Slider отображается на устройствах с дисплеем больше 1280px -->
+      <!-- Для обоих вариантов отображения установлена ленивая загрузка картинок,-->
+      <!-- поэтому можно не беспокоиться о скорости загрузки.-->
+      <div class="slider"> 
+        <div class="container">
+          <h1 class="h1">Сьогодні у кінотеатрах </h1>
+        </div>
+        <div class="container slider__wrapper"> 
+          <div id="slider__prev"> 
+            <svg class="icon"> 
+              <use xlink:href="./svgicons/icons.svg#Name=Chevron-left"> </use>
+            </svg>
+          </div>
+          <div id="slider__next"> 
+            <svg class="icon"> 
+              <use xlink:href="./svgicons/icons.svg#Name=Chevron-right"> </use>
+            </svg>
+          </div>
+          <div class="swiper slider__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slider__slide">
+                <div class="film">
+                  <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+                    <div class="film__numbers"> 
+                      <div class="rating">7.0</div>
+                      <div class="rating rating_type-2">12+</div>
+                    </div>
+                    <div class="film__like-btn">
+                      <!-- Для активации добавить класс icon-btn_selected-->
+                      <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                        <svg class="icon">
+                          <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn btn_small film__name">Movie name</div>
+                  <div class="film__info"> 
+                    <h4 class="h4">Year, Genre</h4>
+                    <h4 class="h4">Country</h4>
+                  </div><a class="button button_small button_secondary-1" href="#">
+                    <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+                </div>
+              </div>
+              <div class="swiper-slide slider__slide">
+                <div class="film">
+                  <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+                    <div class="film__numbers"> 
+                      <div class="rating">7.0</div>
+                      <div class="rating rating_type-2">12+</div>
+                    </div>
+                    <div class="film__like-btn">
+                      <!-- Для активации добавить класс icon-btn_selected-->
+                      <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                        <svg class="icon">
+                          <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn btn_small film__name">Movie name</div>
+                  <div class="film__info"> 
+                    <h4 class="h4">Year, Genre</h4>
+                    <h4 class="h4">Country</h4>
+                  </div><a class="button button_small button_secondary-1" href="#">
+                    <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+                </div>
+              </div>
+              <div class="swiper-slide slider__slide">
+                <div class="film">
+                  <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+                    <div class="film__numbers"> 
+                      <div class="rating">7.0</div>
+                      <div class="rating rating_type-2">12+</div>
+                    </div>
+                    <div class="film__like-btn">
+                      <!-- Для активации добавить класс icon-btn_selected-->
+                      <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                        <svg class="icon">
+                          <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn btn_small film__name">Movie name</div>
+                  <div class="film__info"> 
+                    <h4 class="h4">Year, Genre</h4>
+                    <h4 class="h4">Country</h4>
+                  </div><a class="button button_small button_secondary-1" href="#">
+                    <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+                </div>
+              </div>
+              <div class="swiper-slide slider__slide">
+                <div class="film">
+                  <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+                    <div class="film__numbers"> 
+                      <div class="rating">7.0</div>
+                      <div class="rating rating_type-2">12+</div>
+                    </div>
+                    <div class="film__like-btn">
+                      <!-- Для активации добавить класс icon-btn_selected-->
+                      <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                        <svg class="icon">
+                          <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn btn_small film__name">Movie name</div>
+                  <div class="film__info"> 
+                    <h4 class="h4">Year, Genre</h4>
+                    <h4 class="h4">Country</h4>
+                  </div><a class="button button_small button_secondary-1" href="#">
+                    <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+                </div>
+              </div>
+              <div class="swiper-slide slider__slide">
+                <div class="film">
+                  <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+                    <div class="film__numbers"> 
+                      <div class="rating">7.0</div>
+                      <div class="rating rating_type-2">12+</div>
+                    </div>
+                    <div class="film__like-btn">
+                      <!-- Для активации добавить класс icon-btn_selected-->
+                      <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                        <svg class="icon">
+                          <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn btn_small film__name">Movie name</div>
+                  <div class="film__info"> 
+                    <h4 class="h4">Year, Genre</h4>
+                    <h4 class="h4">Country</h4>
+                  </div><a class="button button_small button_secondary-1" href="#">
+                    <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+                </div>
+              </div>
+              <div class="swiper-slide slider__slide">
+                <div class="film">
+                  <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+                    <div class="film__numbers"> 
+                      <div class="rating">7.0</div>
+                      <div class="rating rating_type-2">12+</div>
+                    </div>
+                    <div class="film__like-btn">
+                      <!-- Для активации добавить класс icon-btn_selected-->
+                      <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                        <svg class="icon">
+                          <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn btn_small film__name">Movie name</div>
+                  <div class="film__info"> 
+                    <h4 class="h4">Year, Genre</h4>
+                    <h4 class="h4">Country</h4>
+                  </div><a class="button button_small button_secondary-1" href="#">
+                    <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+                </div>
+              </div>
+              <div class="swiper-slide slider__slide">
+                <div class="film">
+                  <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+                    <div class="film__numbers"> 
+                      <div class="rating">7.0</div>
+                      <div class="rating rating_type-2">12+</div>
+                    </div>
+                    <div class="film__like-btn">
+                      <!-- Для активации добавить класс icon-btn_selected-->
+                      <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                        <svg class="icon">
+                          <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn btn_small film__name">Movie name</div>
+                  <div class="film__info"> 
+                    <h4 class="h4">Year, Genre</h4>
+                    <h4 class="h4">Country</h4>
+                  </div><a class="button button_small button_secondary-1" href="#">
+                    <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+                </div>
+              </div>
+              <div class="swiper-slide slider__slide">
+                <div class="film">
+                  <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+                    <div class="film__numbers"> 
+                      <div class="rating">7.0</div>
+                      <div class="rating rating_type-2">12+</div>
+                    </div>
+                    <div class="film__like-btn">
+                      <!-- Для активации добавить класс icon-btn_selected-->
+                      <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                        <svg class="icon">
+                          <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn btn_small film__name">Movie name</div>
+                  <div class="film__info"> 
+                    <h4 class="h4">Year, Genre</h4>
+                    <h4 class="h4">Country</h4>
+                  </div><a class="button button_small button_secondary-1" href="#">
+                    <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+                </div>
+              </div>
+              <div class="swiper-slide slider__slide">
+                <div class="film">
+                  <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+                    <div class="film__numbers"> 
+                      <div class="rating">7.0</div>
+                      <div class="rating rating_type-2">12+</div>
+                    </div>
+                    <div class="film__like-btn">
+                      <!-- Для активации добавить класс icon-btn_selected-->
+                      <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                        <svg class="icon">
+                          <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn btn_small film__name">Movie name</div>
+                  <div class="film__info"> 
+                    <h4 class="h4">Year, Genre</h4>
+                    <h4 class="h4">Country</h4>
+                  </div><a class="button button_small button_secondary-1" href="#">
+                    <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+                </div>
+              </div>
+              <div class="swiper-slide slider__slide">
+                <div class="film">
+                  <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+                    <div class="film__numbers"> 
+                      <div class="rating">7.0</div>
+                      <div class="rating rating_type-2">12+</div>
+                    </div>
+                    <div class="film__like-btn">
+                      <!-- Для активации добавить класс icon-btn_selected-->
+                      <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                        <svg class="icon">
+                          <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn btn_small film__name">Movie name</div>
+                  <div class="film__info"> 
+                    <h4 class="h4">Year, Genre</h4>
+                    <h4 class="h4">Country</h4>
+                  </div><a class="button button_small button_secondary-1" href="#">
+                    <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+                </div>
+              </div>
+              <div class="swiper-slide slider__slide">
+                <div class="film">
+                  <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+                    <div class="film__numbers"> 
+                      <div class="rating">7.0</div>
+                      <div class="rating rating_type-2">12+</div>
+                    </div>
+                    <div class="film__like-btn">
+                      <!-- Для активации добавить класс icon-btn_selected-->
+                      <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                        <svg class="icon">
+                          <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn btn_small film__name">Movie name</div>
+                  <div class="film__info"> 
+                    <h4 class="h4">Year, Genre</h4>
+                    <h4 class="h4">Country</h4>
+                  </div><a class="button button_small button_secondary-1" href="#">
+                    <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+                </div>
+              </div>
+              <div class="swiper-slide slider__slide">
+                <div class="film">
+                  <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+                    <div class="film__numbers"> 
+                      <div class="rating">7.0</div>
+                      <div class="rating rating_type-2">12+</div>
+                    </div>
+                    <div class="film__like-btn">
+                      <!-- Для активации добавить класс icon-btn_selected-->
+                      <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                        <svg class="icon">
+                          <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn btn_small film__name">Movie name</div>
+                  <div class="film__info"> 
+                    <h4 class="h4">Year, Genre</h4>
+                    <h4 class="h4">Country</h4>
+                  </div><a class="button button_small button_secondary-1" href="#">
+                    <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="films">
+        <div class="container">
+          <h1 class="h1">Сьогодні у кінотеатрах</h1>
+        </div>
+        <div class="container films__wrapper">
+          <div class="film">
+            <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+              <div class="film__numbers"> 
+                <div class="rating">7.0</div>
+                <div class="rating rating_type-2">12+</div>
+              </div>
+              <div class="film__like-btn">
+                <!-- Для активации добавить класс icon-btn_selected-->
+                <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn_small film__name">Movie name</div>
+            <div class="film__info"> 
+              <h4 class="h4">Year, Genre</h4>
+              <h4 class="h4">Country</h4>
+            </div><a class="button button_small button_secondary-1" href="#">
+              <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+          </div>
+          <div class="film">
+            <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+              <div class="film__numbers"> 
+                <div class="rating">7.0</div>
+                <div class="rating rating_type-2">12+</div>
+              </div>
+              <div class="film__like-btn">
+                <!-- Для активации добавить класс icon-btn_selected-->
+                <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn_small film__name">Movie name</div>
+            <div class="film__info"> 
+              <h4 class="h4">Year, Genre</h4>
+              <h4 class="h4">Country</h4>
+            </div><a class="button button_small button_secondary-1" href="#">
+              <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+          </div>
+          <div class="film">
+            <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+              <div class="film__numbers"> 
+                <div class="rating">7.0</div>
+                <div class="rating rating_type-2">12+</div>
+              </div>
+              <div class="film__like-btn">
+                <!-- Для активации добавить класс icon-btn_selected-->
+                <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn_small film__name">Movie name</div>
+            <div class="film__info"> 
+              <h4 class="h4">Year, Genre</h4>
+              <h4 class="h4">Country</h4>
+            </div><a class="button button_small button_secondary-1" href="#">
+              <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+          </div>
+          <div class="film">
+            <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+              <div class="film__numbers"> 
+                <div class="rating">7.0</div>
+                <div class="rating rating_type-2">12+</div>
+              </div>
+              <div class="film__like-btn">
+                <!-- Для активации добавить класс icon-btn_selected-->
+                <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn_small film__name">Movie name</div>
+            <div class="film__info"> 
+              <h4 class="h4">Year, Genre</h4>
+              <h4 class="h4">Country</h4>
+            </div><a class="button button_small button_secondary-1" href="#">
+              <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+          </div>
+          <div class="film">
+            <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+              <div class="film__numbers"> 
+                <div class="rating">7.0</div>
+                <div class="rating rating_type-2">12+</div>
+              </div>
+              <div class="film__like-btn">
+                <!-- Для активации добавить класс icon-btn_selected-->
+                <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn_small film__name">Movie name</div>
+            <div class="film__info"> 
+              <h4 class="h4">Year, Genre</h4>
+              <h4 class="h4">Country</h4>
+            </div><a class="button button_small button_secondary-1" href="#">
+              <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+          </div>
+          <div class="film">
+            <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+              <div class="film__numbers"> 
+                <div class="rating">7.0</div>
+                <div class="rating rating_type-2">12+</div>
+              </div>
+              <div class="film__like-btn">
+                <!-- Для активации добавить класс icon-btn_selected-->
+                <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn_small film__name">Movie name</div>
+            <div class="film__info"> 
+              <h4 class="h4">Year, Genre</h4>
+              <h4 class="h4">Country</h4>
+            </div><a class="button button_small button_secondary-1" href="#">
+              <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+          </div>
+          <div class="film">
+            <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+              <div class="film__numbers"> 
+                <div class="rating">7.0</div>
+                <div class="rating rating_type-2">12+</div>
+              </div>
+              <div class="film__like-btn">
+                <!-- Для активации добавить класс icon-btn_selected-->
+                <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn_small film__name">Movie name</div>
+            <div class="film__info"> 
+              <h4 class="h4">Year, Genre</h4>
+              <h4 class="h4">Country</h4>
+            </div><a class="button button_small button_secondary-1" href="#">
+              <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+          </div>
+          <div class="film">
+            <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+              <div class="film__numbers"> 
+                <div class="rating">7.0</div>
+                <div class="rating rating_type-2">12+</div>
+              </div>
+              <div class="film__like-btn">
+                <!-- Для активации добавить класс icon-btn_selected-->
+                <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn_small film__name">Movie name</div>
+            <div class="film__info"> 
+              <h4 class="h4">Year, Genre</h4>
+              <h4 class="h4">Country</h4>
+            </div><a class="button button_small button_secondary-1" href="#">
+              <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+          </div>
+          <div class="film">
+            <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+              <div class="film__numbers"> 
+                <div class="rating">7.0</div>
+                <div class="rating rating_type-2">12+</div>
+              </div>
+              <div class="film__like-btn">
+                <!-- Для активации добавить класс icon-btn_selected-->
+                <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn_small film__name">Movie name</div>
+            <div class="film__info"> 
+              <h4 class="h4">Year, Genre</h4>
+              <h4 class="h4">Country</h4>
+            </div><a class="button button_small button_secondary-1" href="#">
+              <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+          </div>
+          <div class="film">
+            <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+              <div class="film__numbers"> 
+                <div class="rating">7.0</div>
+                <div class="rating rating_type-2">12+</div>
+              </div>
+              <div class="film__like-btn">
+                <!-- Для активации добавить класс icon-btn_selected-->
+                <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn_small film__name">Movie name</div>
+            <div class="film__info"> 
+              <h4 class="h4">Year, Genre</h4>
+              <h4 class="h4">Country</h4>
+            </div><a class="button button_small button_secondary-1" href="#">
+              <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+          </div>
+          <div class="film">
+            <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+              <div class="film__numbers"> 
+                <div class="rating">7.0</div>
+                <div class="rating rating_type-2">12+</div>
+              </div>
+              <div class="film__like-btn">
+                <!-- Для активации добавить класс icon-btn_selected-->
+                <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn_small film__name">Movie name</div>
+            <div class="film__info"> 
+              <h4 class="h4">Year, Genre</h4>
+              <h4 class="h4">Country</h4>
+            </div><a class="button button_small button_secondary-1" href="#">
+              <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+          </div>
+          <div class="film">
+            <div class="film__img-wrap"><picture><source srcset="./images/blocks/film/Img.webp, " type="image/webp"><img class="film__img" src="./images/blocks/film/Img.png" alt="" srcset="" loading="lazy"></picture>
+              <div class="film__numbers"> 
+                <div class="rating">7.0</div>
+                <div class="rating rating_type-2">12+</div>
+              </div>
+              <div class="film__like-btn">
+                <!-- Для активации добавить класс icon-btn_selected-->
+                <div class="icon-btn icon-btn_type-three icon-btn_micro"> 
+                  <svg class="icon">
+                    <use xlink:href="./svgicons/icons.svg#Name=Heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn_small film__name">Movie name</div>
+            <div class="film__info"> 
+              <h4 class="h4">Year, Genre</h4>
+              <h4 class="h4">Country</h4>
+            </div><a class="button button_small button_secondary-1" href="#">
+              <div class="btn btn_dark btn_small">Всі сеанси</div></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="footer"> 
+      <div class="container footer__wrapper">
+        <div class="footer__block-1"><a class="footer__logo" href="#"> <picture><source srcset="./images/logo.webp" type="image/webp"><img src="./images/logo.png" alt="Logo" loading="lazy"/></picture></a>
+          <p>Кінопортал@.com - Ексклюзивна платформа для останніх новин та трендів у світі кіно. </p>
+          <p>Усі права захищені та охороняються чинним законодавством.   </p>
+          <p>Використання матеріалів з даного сайту можливе тільки з письмового дозволу компанії.</p>
+        </div>
+        <nav class="footer__block-2"> <a class="footer__link" href="#">Головна</a><a class="footer__link" href="#">Кінотеатри</a><a class="footer__link" href="#">Фільми</a><a class="footer__link" href="#">Розклад</a><a class="footer__link" href="#">Підбірки</a></nav>
+        <div class="footer__line"></div>
+        <nav class="footer__block-3"> <a class="footer__link" href="#">Реклама</a><a class="footer__link" href="#">Контакти</a><a class="footer__link" href="#">Карта сайту</a><a class="footer__link" href="#">Зворотний звʼязок</a><a class="footer__link" href="#">Політика конфіденційності</a></nav>
+        <div class="footer__block-4"> 
+          <form action="" method="post"> 
+            <label>Будь в курсі останніх новин та релізів</label>
+            <div class="footer__input"> 
+              <input id="email" type="email" name="email" placeholder="Email"/>
+            </div>
+            <button class="button button_big button_primary-1" type="submit">
+              <div class="btn btn_light btn_big">Підписатись</div>
+            </button>
+          </form>
+          <div class="footer__social"> <a href="#">
+              <svg class="icon"> 
+                <use xlink:href="./svgicons/social.svg#Name=Instagram"> </use>
+              </svg></a><a href="#">
+              <svg class="icon"> 
+                <use xlink:href="./svgicons/social.svg#Name=Viber26"> </use>
+              </svg></a><a href="#">
+              <svg class="icon"> 
+                <use xlink:href="./svgicons/social.svg#Name=Telegram"> </use>
+              </svg></a></div>
+        </div>
+      </div>
+    </footer>
+    <div id="to-up-btn"> 
+      <svg class="icon"> 
+        <use xlink:href="./svgicons/icons.svg#Name=Chevron-up"></use>
+      </svg>
+    </div>
+    <!-- All custom scripts-->
+    <script src="./bundles/app.min.js"></script>
+  </body>
+</html>
